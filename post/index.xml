@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on AICC</title>
+    <link>https://github.com/aicc-cn/aicc-cn.github.io.git/post/</link>
+    <description>Recent content in Posts on AICC</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 10 Mar 2022 16:04:50 +0800</lastBuildDate><atom:link href="https://github.com/aicc-cn/aicc-cn.github.io.git/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello</title>
+      <link>https://github.com/aicc-cn/aicc-cn.github.io.git/post/hello/</link>
+      <pubDate>Thu, 10 Mar 2022 16:04:50 +0800</pubDate>
+      
+      <guid>https://github.com/aicc-cn/aicc-cn.github.io.git/post/hello/</guid>
+      <description>Hello AICC</description>
+    </item>
+    
+  </channel>
+</rss>

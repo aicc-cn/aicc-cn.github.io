@@ -1,0 +1,9 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>AICC</title>
+        <link>https://github.com/aicc-cn/aicc-cn.github.io.git/</link>
+        <description>AICC</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 10 Mar 2022 16:04:50 &#43;0800</lastBuildDate>
+            <atom:link href="https://github.com/aicc-cn/aicc-cn.github.io.git/index.xml" rel="self" type="application/rss+xml" />
+        </channel>
+</rss>
