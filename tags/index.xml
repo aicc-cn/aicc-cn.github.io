@@ -1,7 +1,7 @@
 <rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
     <channel>
         <title>Tags - 标签 - AICC</title>
-        <link>https://github.com/aicc-cn/aicc-cn.github.io.git/tags/</link>
+        <link>http://aicc-cn.github.io/tags/</link>
         <description>Tags - 标签 - AICC</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><atom:link href="https://github.com/aicc-cn/aicc-cn.github.io.git/tags/" rel="self" type="application/rss+xml" /></channel>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><atom:link href="http://aicc-cn.github.io/tags/" rel="self" type="application/rss+xml" /></channel>
 </rss>

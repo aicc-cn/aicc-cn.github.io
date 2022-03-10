@@ -2,8 +2,8 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>https://github.com/aicc-cn/aicc-cn.github.io.git/</loc><lastmod>2022-03-10T16:04:50&#43;08:00</lastmod></url><url>
-            <loc>https://github.com/aicc-cn/aicc-cn.github.io.git/post/hello/</loc><lastmod>2022-03-10T16:04:50&#43;08:00</lastmod></url><url>
-            <loc>https://github.com/aicc-cn/aicc-cn.github.io.git/post/</loc><lastmod>2022-03-10T16:04:50&#43;08:00</lastmod></url><url>
-            <loc>https://github.com/aicc-cn/aicc-cn.github.io.git/categories/</loc></url><url>
-            <loc>https://github.com/aicc-cn/aicc-cn.github.io.git/tags/</loc></url></urlset>
+            <loc>http://aicc-cn.github.io/</loc><lastmod>2022-03-10T16:04:50&#43;08:00</lastmod></url><url>
+            <loc>http://aicc-cn.github.io/post/hello/</loc><lastmod>2022-03-10T16:04:50&#43;08:00</lastmod></url><url>
+            <loc>http://aicc-cn.github.io/post/</loc><lastmod>2022-03-10T16:04:50&#43;08:00</lastmod></url><url>
+            <loc>http://aicc-cn.github.io/categories/</loc></url><url>
+            <loc>http://aicc-cn.github.io/tags/</loc></url></urlset>
