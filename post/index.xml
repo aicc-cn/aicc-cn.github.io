@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on AICC</title>
-    <link>http://aicc-cn.github.io/post/</link>
+    <link>https://aicc-cn.github.io/post/</link>
     <description>Recent content in Posts on AICC</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 10 Mar 2022 16:04:50 +0800</lastBuildDate><atom:link href="http://aicc-cn.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 10 Mar 2022 17:22:29 +0800</lastBuildDate><atom:link href="https://aicc-cn.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Hello</title>
-      <link>http://aicc-cn.github.io/post/hello/</link>
-      <pubDate>Thu, 10 Mar 2022 16:04:50 +0800</pubDate>
+      <link>https://aicc-cn.github.io/post/hello/</link>
+      <pubDate>Thu, 10 Mar 2022 17:22:29 +0800</pubDate>
       
-      <guid>http://aicc-cn.github.io/post/hello/</guid>
+      <guid>https://aicc-cn.github.io/post/hello/</guid>
       <description>Hello AICC</description>
     </item>
     
