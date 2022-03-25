@@ -4,8 +4,8 @@
   <meta name="generator" content="Hexo 6.1.0">
   <meta charset="utf-8">
   <!-- SEO相关 -->
-  <meta name="robots" content="index,follow">
-  <link rel="canonical" href="https://aicc-cn.github.io/"/>
+  
+  <link rel="canonical" href="https://aicc-cn.github.io/2019/03/23/2019-03-13-cv-image_background/"/>
   <!-- 渲染优化 -->
   <!-- <meta http-equiv='x-dns-prefetch-control' content='on' />
   <link rel='dns-prefetch' href='https://cdn.jsdelivr.net'>
@@ -20,22 +20,25 @@
   <meta content="AICC" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1648216938086" as="style">
+  <link rel="preload" href="/css/style.css?time=1648216938024" as="style">
   <link rel="preload" href="/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
   <!-- 页面元数据 -->
-  <title>AICC</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="Artificial Intelligence Chinese Community">
-<meta property="og:type" content="website">
-<meta property="og:title" content="AICC">
-<meta property="og:url" content="https://aicc-cn.github.io/index.html">
+  <title>【十三】背景建模 - AICC</title>
+  <meta name="keywords" content="OpenCV,null">
+  <meta name="description" content="运动估计-背景建模">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【十三】背景建模">
+<meta property="og:url" content="https://aicc-cn.github.io/2019/03/23/2019-03-13-cv-image_background/index.html">
 <meta property="og:site_name" content="AICC">
-<meta property="og:description" content="Artificial Intelligence Chinese Community">
+<meta property="og:description" content="运动估计-背景建模">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://aicc-cn.github.io/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+<meta property="article:published_time" content="2019-03-22T16:00:00.000Z">
+<meta property="article:modified_time" content="2022-03-25T13:51:56.365Z">
 <meta property="article:author" content="AICC">
+<meta property="article:tag" content="OpenCV">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://aicc-cn.github.io/media/org.volantis/blog/favicon/android-chrome-192x192.png">
   <!-- feed -->
@@ -1807,8 +1810,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1648216938086" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1648216938086"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1648216938024" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1648216938024"></noscript>
     <script>
       let userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1885,7 +1888,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   volantis.dom = {}; // 页面Dom see: /source/js/app.js etc.
 
   volantis.GLOBAL_CONFIG ={
-    cdn: {"js":{"app":"/js/app.js?time=1648216938086","sites":"/js/plugins/sites.js?time=1648216938086","friends":"/js/plugins/friends.js?time=1648216938086","parallax":"/js/plugins/parallax.js?time=1648216938086","rightMenu":"/js/plugins/rightMenu.js?time=1648216938086","contributors":"/js/plugins/contributors.js?time=1648216938086","message":"/js/thirdparty/message.js?time=1648216938086","valine":"https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1648216938086","search":"/js/search/hexo.js?time=1648216938086"},"css":{"style":"/css/style.css?time=1648216938086","message":"/css/message.css?time=1648216938086"}},
+    cdn: {"js":{"app":"/js/app.js?time=1648216938024","sites":"/js/plugins/sites.js?time=1648216938024","friends":"/js/plugins/friends.js?time=1648216938024","parallax":"/js/plugins/parallax.js?time=1648216938024","rightMenu":"/js/plugins/rightMenu.js?time=1648216938024","contributors":"/js/plugins/contributors.js?time=1648216938024","message":"/js/thirdparty/message.js?time=1648216938024","valine":"https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1648216938024","search":"/js/search/hexo.js?time=1648216938024"},"css":{"style":"/css/style.css?time=1648216938024","message":"/css/message.css?time=1648216938023"}},
     default: {"avatar":"/media/placeholder/avatar/round/3442075.svg","link":"/media/placeholder/link/8f277b4ee0ecd.svg","cover":"/media/placeholder/cover/76b86c0226ffd.svg","image":"/media/placeholder/image/2659360.svg"},
     lastupdate: new Date('Fri Mar 25 2022 22:02:18 GMT+0800 (中国标准时间)'),
     sidebar: {
@@ -2270,7 +2273,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <!-- Custom Files head end-->
 </head>
   <body itemscope itemtype="http://schema.org/WebPage">
-    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow blur " style='opacity: 0' >
+    <header itemscope itemtype="http://schema.org/WPHeader" id="l_header" class="l_header auto shadow blur show" style='opacity: 0' >
   <div class='container'>
   <div id='wrapper'>
     <div class='nav-sub'>
@@ -2437,7 +2440,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     
       <!-- see: /layout/_partial/scripts/_ctrl/coverCtrl.ejs -->
-      <div id="full" class='cover-wrapper  dock' style="display: ;">
+      <div id="none" class='cover-wrapper post dock' style="display: none;">
         
   <div class='cover-bg lazyload placeholder' data-bg="https://bing.ioliu.cn/v1/rand?w=1920&h=1200"></div>
 
@@ -2504,7 +2507,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   </div>
 </div>
 
-        <div id="scroll-down" style="display: ;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
+        <div id="scroll-down" style="display: none;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
       </div>
     
   
@@ -2514,81 +2517,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         <div class="body-wrapper">
           
 <div id="l_main" class=''>
-  
-  <section class="post-list">
-    
-      
-        
-          
-        
-          
-        
-          
-        
-          
-        
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-          
-        
-      
-    
-    
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
+  <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
   <link itemprop="mainEntityOfPage" href="https://aicc-cn.github.io/2019/03/23/2019-03-13-cv-image_background/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="AICC">
@@ -2598,624 +2527,308 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <meta itemprop="description" content="Artificial Intelligence Chinese Community">
   </span>
   
-  
+
+
   
     <span hidden>
       <meta itemprop="image" content="/media/org.volantis/blog/favicon/android-chrome-192x192.png">
     </span>
   
-  
+  <div class="article-meta" id="top">
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2019/03/23/2019-03-13-cv-image_background/"  itemprop="url">
+    
+    
+      <h1 class="title" itemprop="name headline">
         【十三】背景建模
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author' itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <a itemprop="url" class='author' target="_blank" href="https://github.com/sevenold" rel="nofollow noopener">
+    <img itemprop="image" src="https://avatars.githubusercontent.com/u/41443157?s=96&v=4" class="lazyload" data-srcset="https://avatars.githubusercontent.com/u/41443157?s=96&v=4" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+    <p itemprop="name">Seven</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i>
+    <a class="category-link" href="/categories/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89/">机器视觉</a>
     
-      <p>运动估计-背景建模</p>
+      <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
+        <a href="/categories/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89/" itemprop="url"><span itemprop="name">机器视觉</span></a>
+      </span>
     
   </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2019-03-23T00:00:00+08:00">2019-03-23</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89/">机器视觉</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89/" itemprop="url"><span itemprop="name">机器视觉</span></a>
-            </span>
+
+
           
         
+          
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2019-03-23T00:00:00+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2019年3月23日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+
+          
+        
+        <!-- Custom Files topMeta begin-->
+        
+        <!-- Custom Files topMeta end-->
       </div>
+    
+  </div>
+
+
+  <div id="layoutHelper-page-plugins"></div>
+  <div id="post-body" itemprop="articleBody">
+    <h3 id="背景建模"><a href="#背景建模" class="headerlink" title="背景建模"></a>背景建模</h3><h4 id="相对运动的基本方式"><a href="#相对运动的基本方式" class="headerlink" title="相对运动的基本方式"></a>相对运动的基本方式</h4><blockquote>
+<ul>
+<li>相机静止，目标运劢——背景提取(减除)</li>
+<li>相机运劢，目标静止——光流估计(全局运劢)</li>
+<li>相机和目标均运劢——光流估计</li>
+</ul>
+</blockquote>
+<h4 id="帧差法运动目标检测"><a href="#帧差法运动目标检测" class="headerlink" title="帧差法运动目标检测"></a>帧差法运动目标检测</h4><p><img src="https://eveseven.oss-cn-shanghai.aliyuncs.com/20190123141057.png" class="lazyload" data-srcset="https://eveseven.oss-cn-shanghai.aliyuncs.com/20190123141057.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>​    如图可见，由目标运动引起的运动变化区域包括运动目标在前后两帧中的共同位置(图中黑色区域)、在当前帧中新显露出的背景区域和新覆盖的背景区域三部分。</p>
+<h5 id="【数学模型】"><a href="#【数学模型】" class="headerlink" title="【数学模型】"></a>【<strong>数学模型</strong>】</h5><p>$sign(x)&#x3D;\begin{cases}<br>1,&amp;如果I(x， y， t)-I(x, y, t-1)&gt;T \ 0,&amp;如果其他情况<br>\end{cases}$</p>
+<blockquote>
+<ul>
+<li>D(x, y): 帧差</li>
+<li>I(x,y,t): 当前帧(t时刻)图像</li>
+<li>I(x,y,t): 上一帧(t-1时刻)图像</li>
+<li>T: 像素灰度差阈值</li>
+</ul>
+</blockquote>
+<h4 id="混合高斯背景建模"><a href="#混合高斯背景建模" class="headerlink" title="混合高斯背景建模"></a>混合高斯背景建模</h4><h5 id="【高斯背景】"><a href="#【高斯背景】" class="headerlink" title="【高斯背景】"></a>【<strong>高斯背景</strong>】</h5><blockquote>
+<p>像素灰度值随时间变化符合高斯分布.</p>
+<p>$I(x, y) \thicksim N(u, \sigma^2)$</p>
+</blockquote>
+<p><img src="https://eveseven.oss-cn-shanghai.aliyuncs.com/20190123143447.png" class="lazyload" data-srcset="https://eveseven.oss-cn-shanghai.aliyuncs.com/20190123143447.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<blockquote>
+<ul>
+<li>如果$I(x, y, t)-u&gt;3\sigma$ 为<code>前景</code>，否则就是<code>背景</code>。<ul>
+<li>$I(x, y, t)$是当前帧。</li>
+<li>$u$为均值、$\sigma$是方差。</li>
+</ul>
+</li>
+</ul>
+<p>注意：当前帧的灰度值变化落在$3\sigma$间的就是背景，否则就是前景。</p>
+</blockquote>
+<h5 id="【混合高斯模型】"><a href="#【混合高斯模型】" class="headerlink" title="【混合高斯模型】"></a>【<strong>混合高斯模型</strong>】</h5><blockquote>
+<p>任何一种分布函数都可以看做是多个高斯分布的组合.</p>
+</blockquote>
+<p><img src="https://eveseven.oss-cn-shanghai.aliyuncs.com/20190123144119.png" class="lazyload" data-srcset="https://eveseven.oss-cn-shanghai.aliyuncs.com/20190123144119.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<p>​    混合高斯背景建模是<code>基于像素样本统计信息的背景表示方法</code>，利用像素在较长时间内大量样本值的概率密度等统计信息(如模式数量、每个模式的均值和标准差)表示背景，然后使用<code>统计差分(如3σ原则)进行目标像素判断</code>，可以对复杂动态背景进行建模，计算量较大。<br>​    在混合高斯背景模型中，认为<code>像素之间的颜色信息互不相关，对各像素点的处理都是相互独立的</code>。对于视频图像中的每一个像素点，其值在序列图像中的变化可看作是不断产生像素值的随机过程，即<code>用高斯分布来描述每个像素点的颜色呈现规律&#123;单模态(单峰)，多模态(多峰)&#125;</code>。</p>
+<p>​    对于多峰高斯分布模型，<code>图像的每一个像素点按不同权值的多个高斯分布的叠加来建模，每种高斯分布对应一个可能产生像素点所呈现颜色的状态，各个高斯分布的权值和分布参数随时间更新</code>。当处理彩色图像时，假定图像像素点R、G、B三色通道相互独立并具有相同的方差。对于随机变量X的观测数据集${x_1,x_2,…,x_N}，x_t&#x3D;(r_t,g_t,b_t)$为t时刻像素的样本，则单个采样点$x_t$其服从的混合高斯分布概率密度函数：</p>
+<p><img src="https://eveseven.oss-cn-shanghai.aliyuncs.com/20190123144742.png" class="lazyload" data-srcset="https://eveseven.oss-cn-shanghai.aliyuncs.com/20190123144742.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<blockquote>
+<p>​    其中Q为分布模式总数，$N(I,u_q, \sigma_q^2)$为高斯分布，$μ_q$为其均值，$δ_q$为方差，I为三维单位矩阵，$ω_q$为高斯分布的权重。</p>
+</blockquote>
+<h5 id="【混合高斯背景建模步骤】"><a href="#【混合高斯背景建模步骤】" class="headerlink" title="【混合高斯背景建模步骤】"></a>【<strong>混合高斯背景建模步骤</strong>】</h5><blockquote>
+<p>任务：在线计算：$μ_q$，$δ_q$，$ω_q$</p>
+</blockquote>
+<blockquote>
+<ol>
+<li>模型初始化 将采到的第一帧图像的每个象素的灰度值作为均值，再赋以较大的方差。初值Q&#x3D;1, w&#x3D;1.0。</li>
+<li>模型学习 将当前帧的对应点象素的灰度值与已有的Q个高斯模型作比较，若满足$|x_k-u_{q, k}|&lt;2.5\sigma_{q,k}$ ，则按概率密度公式调整第q个高斯模型的参数和权重；否则转入(3)：</li>
+<li>增加&#x2F;替换高斯分量 若不满足条件，且q&lt;Q，则增加一个新分量；若q&#x3D;Q，则替换</li>
+<li>判断背景  $B &#x3D; argmin_b(\sum_{q&#x3D;1}^bw_q&gt;T)$</li>
+<li>判断前景</li>
+</ol>
+</blockquote>
+<h5 id="【混合高斯模型迭代计算原理】"><a href="#【混合高斯模型迭代计算原理】" class="headerlink" title="【混合高斯模型迭代计算原理】"></a>【<strong>混合高斯模型迭代计算原理</strong>】</h5><p><strong>迭代计算：</strong></p>
+<p><img src="https://eveseven.oss-cn-shanghai.aliyuncs.com/20190123150252.png" class="lazyload" data-srcset="https://eveseven.oss-cn-shanghai.aliyuncs.com/20190123150252.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+<blockquote>
+<ul>
+<li>$M_q(k)$为二值化函数，仅当像素值匹配第q类时取1，其余取0</li>
+<li>类别数值取值不大于5</li>
+</ul>
+</blockquote>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><blockquote>
+<ol>
+<li>背景静止时，可以使用基于背景提取的运动估计斱法计算运动目标。</li>
+<li>混合高斯模型可模拟任意概率密度函数，是背景建模的主流方法</li>
+<li>混合高斯模型参数采用迭代方式计算。</li>
+</ol>
+</blockquote>
+<h3 id="代码实例"><a href="#代码实例" class="headerlink" title="代码实例"></a>代码实例</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#!/usr/bin/env python</span></span><br><span class="line"><span class="comment"># -*- coding: utf-8 -*-</span></span><br><span class="line"><span class="comment"># @Time    : 2019/1/22 21:09</span></span><br><span class="line"><span class="comment"># @Author  : Seven</span></span><br><span class="line"><span class="comment"># @File    : backgroundDemo.py</span></span><br><span class="line"><span class="comment"># @Software: PyCharm</span></span><br><span class="line"><span class="comment"># function : 基于背景提取的运动估计</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> cv2</span><br><span class="line"></span><br><span class="line"><span class="comment"># 加载视频</span></span><br><span class="line">cap = cv2.VideoCapture()</span><br><span class="line">cap.<span class="built_in">open</span>(<span class="string">&#x27;768x576.avi&#x27;</span>)</span><br><span class="line"><span class="keyword">if</span> <span class="keyword">not</span> cap.isOpened():</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;无法打开视频文件&quot;</span>)</span><br><span class="line"></span><br><span class="line">pBgModel = cv2.createBackgroundSubtractorMOG2()</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">def</span> <span class="title function_">labelTargets</span>(<span class="params">img, mask, threshold</span>):</span><br><span class="line">    seg = mask.copy()</span><br><span class="line">    cnts = cv2.findContours(seg, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)</span><br><span class="line">    count = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> cnts[<span class="number">1</span>]:</span><br><span class="line">        area = cv2.contourArea(i)</span><br><span class="line">        <span class="keyword">if</span> area &lt; threshold:</span><br><span class="line">            <span class="keyword">continue</span></span><br><span class="line">        count += <span class="number">1</span></span><br><span class="line">        rect = cv2.boundingRect(i)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;矩形：X:&#123;&#125; Y:&#123;&#125; 宽：&#123;&#125; 高：&#123;&#125;&quot;</span>.<span class="built_in">format</span>(rect[<span class="number">0</span>], rect[<span class="number">1</span>], rect[<span class="number">2</span>], rect[<span class="number">3</span>]))</span><br><span class="line">        cv2.drawContours(img, [i], -<span class="number">1</span>, (<span class="number">255</span>, <span class="number">255</span>, <span class="number">0</span>), <span class="number">1</span>)</span><br><span class="line">        cv2.rectangle(img, (rect[<span class="number">0</span>], rect[<span class="number">1</span>]), (rect[<span class="number">0</span>] + rect[<span class="number">2</span>], rect[<span class="number">1</span>] + rect[<span class="number">3</span>]), (<span class="number">0</span>, <span class="number">0</span>, <span class="number">255</span>), <span class="number">1</span>)</span><br><span class="line">        cv2.putText(img, <span class="built_in">str</span>(count), (rect[<span class="number">0</span>], rect[<span class="number">1</span>]), cv2.FONT_HERSHEY_PLAIN, <span class="number">0.5</span>, (<span class="number">0</span>, <span class="number">255</span>, <span class="number">0</span>))</span><br><span class="line">    <span class="keyword">return</span> count</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    flag, source = cap.read()</span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">not</span> flag:</span><br><span class="line">        <span class="keyword">break</span></span><br><span class="line">    image = cv2.pyrDown(source)</span><br><span class="line"></span><br><span class="line">    fgMask = pBgModel.apply(image)</span><br><span class="line"></span><br><span class="line">    kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (<span class="number">5</span>, <span class="number">5</span>))</span><br><span class="line">    morphImage_open = cv2.morphologyEx(fgMask, cv2.MORPH_OPEN, kernel, iterations=<span class="number">5</span>)</span><br><span class="line">    mask = fgMask - morphImage_open</span><br><span class="line">    _, Mask = cv2.threshold(mask, <span class="number">30</span>, <span class="number">255</span>, cv2.THRESH_BINARY + cv2.THRESH_OTSU)</span><br><span class="line">    <span class="comment"># Mask = cv2.GaussianBlur(Mask, (5, 5), 0)</span></span><br><span class="line">    targets = labelTargets(image, Mask, <span class="number">30</span>)</span><br><span class="line"></span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;共检测%s个目标&quot;</span> % targets)</span><br><span class="line">    backGround = pBgModel.getBackgroundImage()</span><br><span class="line">    foreGround = image - backGround</span><br><span class="line">    cv2.imshow(<span class="string">&#x27;source&#x27;</span>, image)</span><br><span class="line">    cv2.imshow(<span class="string">&#x27;background&#x27;</span>, backGround)</span><br><span class="line">    cv2.imshow(<span class="string">&#x27;foreground&#x27;</span>, Mask)</span><br><span class="line">    key = cv2.waitKey(<span class="number">10</span>)</span><br><span class="line">    <span class="keyword">if</span> key == <span class="number">27</span>:</span><br><span class="line">        <span class="keyword">break</span></span><br></pre></td></tr></table></figure>
+
+<p><img src="https://eveseven.oss-cn-shanghai.aliyuncs.com/GIF.gif" class="lazyload" data-srcset="https://eveseven.oss-cn-shanghai.aliyuncs.com/GIF.gif" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="></p>
+
+
+  </div>
+  
+  
+    
+    <div class='footer'>
       
-        <div>
-          <a class='readmore' href='/2019/03/23/2019-03-13-cv-image_background/' itemprop="url">
-            阅读全文
-          </a>
+      
+        
+  <div class="related_posts">
+    <section class='header'>
+      <i class="fa-solid fa-bookmark fa-fw" aria-hidden="true"></i><span>相关文章</span>
+    </section>
+    <section class='body'>
+      <div class="vlts-rps"><a class="item" href="/2019/03/22/2019-03-02-cv-visualsystem/" title="【二】视觉系统" rel="bookmark "><img src="http://eveseven.oss-cn-shanghai.aliyuncs.com/19-1-9/95153635.jpg" class="lazyload" data-srcset="http://eveseven.oss-cn-shanghai.aliyuncs.com/19-1-9/95153635.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><span class="title">【二】视觉系统</span><span class="excerpt">视觉系统</span></a><a class="item" href="/2019/01/07/2019-01-07-opencv-setup/" title="OpenCV环境配置（win10+opencv3.4.1+vs2017）" rel="bookmark "><img src="http://eveseven.oss-cn-shanghai.aliyuncs.com/19-1-7/71143712.jpg" class="lazyload" data-srcset="http://eveseven.oss-cn-shanghai.aliyuncs.com/19-1-7/71143712.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><span class="title">OpenCV环境配置（win10+opencv3.4.1+vs2017）</span><span class="excerpt">OpenCV环境配置（win10+opencv3.4.1+vs2017）</span></a><a class="item" href="/2019/03/22/2019-03-03-cv-digitaltoimage/" title="【三】数字成像系统" rel="bookmark "><img src="http://eveseven.oss-cn-shanghai.aliyuncs.com/19-1-11/66671052.jpg" class="lazyload" data-srcset="http://eveseven.oss-cn-shanghai.aliyuncs.com/19-1-11/66671052.jpg" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><span class="title">【三】数字成像系统</span><span class="excerpt">数字成像系统</span></a><a class="item" href="/2019/03/22/2019-03-06-cv-image_hist/" title="【六】直方图" rel="bookmark "><img src="https://eveseven.oss-cn-shanghai.aliyuncs.com/20190115154350.png" class="lazyload" data-srcset="https://eveseven.oss-cn-shanghai.aliyuncs.com/20190115154350.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><span class="title">【六】直方图</span><span class="excerpt">视觉处理算-直方图</span></a><a class="item" href="/2019/03/22/2019-03-04-cv-image_filter/" title="【四】图像滤波" rel="bookmark "><img src="https://s2.ax1x.com/2019/01/13/FvLb6O.png" class="lazyload" data-srcset="https://s2.ax1x.com/2019/01/13/FvLb6O.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" /><span class="title">【四】图像滤波</span><span class="excerpt">视觉处理算法-图像滤波</span></a></div></section></div>
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=https://aicc-cn.github.io/2019/03/23/2019-03-13-cv-image_background/>https://aicc-cn.github.io/2019/03/23/2019-03-13-cv-image_background/</a></p>
+              
+            
+          </blockquote>
         </div>
+      
       
     </div>
   
+  
+    
 
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-03-25T21:51:56+08:00">
+  <a class='notlink'>
+    <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2022年3月25日</p>
+  </a>
 </div>
 
-          </div>
         
       
         
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://aicc-cn.github.io/2019/03/23/2019-03-14-cv-image_LK/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="AICC">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="AICC">
-    <meta itemprop="description" content="Artificial Intelligence Chinese Community">
-  </span>
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/OpenCV/" rel="nofollow"><i class="fa-solid fa-hashtag fa-fw" aria-hidden="true"></i><p>OpenCV</p></a></div>
+  <span hidden itemprop="keywords">OpenCV</span>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=https://aicc-cn.github.io/2019/03/23/2019-03-13-cv-image_background/&title=【十三】背景建模 - AICC&summary="
+          
+          >
+          
+            <img src="/media/org.volantis/logo/128/qq.png" class="lazyload" data-srcset="/media/org.volantis/logo/128/qq.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=https://aicc-cn.github.io/2019/03/23/2019-03-13-cv-image_background/&title=【十三】背景建模 - AICC&summary="
+          
+          >
+          
+            <img src="/media/org.volantis/logo/128/qzone.png" class="lazyload" data-srcset="/media/org.volantis/logo/128/qzone.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
+          
+          target="_blank" href="http://service.weibo.com/share/share.php?url=https://aicc-cn.github.io/2019/03/23/2019-03-13-cv-image_background/&title=【十三】背景建模 - AICC&summary="
+          
+          >
+          
+            <img src="/media/org.volantis/logo/128/weibo.png" class="lazyload" data-srcset="/media/org.volantis/logo/128/weibo.png" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+    <!-- Custom Files bottomMeta begin -->
+    
+    <!-- Custom Files bottomMeta end -->
+  </div>
+
+
   
   
+
   
+    <div class="prev-next">
+      
+      
+        <a class='next' href='/2019/03/23/2019-03-14-cv-image_LK/'>
+          <p class='title'>【十四】光流估计<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>光流估计【简介】
+​    在计算机视觉中，Lucas–Kanade光流算法是一种两帧差分的光流估计算法。它由Bruce D. Lucas 和 Takeo Kanade提出。
+
+【光流的概念】
+...</p>
+        </a>
+      
+    </div>
+  
+  <!-- Custom Files postEnd begin-->
+  
+  <!-- Custom Files postEnd end-->
+</article>
+
+
+  
+
+  
+  <article class="post white-box reveal shadow" id="comments">
     <span hidden>
-      <meta itemprop="image" content="/media/org.volantis/blog/favicon/android-chrome-192x192.png">
+      <meta itemprop="discussionUrl" content="/2019/03/23/2019-03-13-cv-image_background/index.html#comments">
     </span>
-  
-  
+    <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2019/03/23/2019-03-14-cv-image_LK/"  itemprop="url">
-        【十四】光流估计
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
     
-      <p>运动估计-光流估计</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2019-03-23T00:00:00+08:00">2019-03-23</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89/">机器视觉</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89/" itemprop="url"><span itemprop="name">机器视觉</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2019/03/23/2019-03-14-cv-image_LK/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
+    <div id="layoutHelper-comments"></div>
+
+  </article>
   
 
-</div>
 
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://aicc-cn.github.io/2019/03/23/2019-03-19-cv-image_Stereo/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="AICC">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="AICC">
-    <meta itemprop="description" content="Artificial Intelligence Chinese Community">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2019/03/23/2019-03-19-cv-image_Stereo/"  itemprop="url">
-        【十九】立体视觉
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      <p>极线几何与立体视觉-立体视觉</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2019-03-23T00:00:00+08:00">2019-03-23</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89/">机器视觉</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89/" itemprop="url"><span itemprop="name">机器视觉</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2019/03/23/2019-03-19-cv-image_Stereo/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
 
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://aicc-cn.github.io/2019/03/23/2019-03-16-cv-image_position/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="AICC">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="AICC">
-    <meta itemprop="description" content="Artificial Intelligence Chinese Community">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2019/03/23/2019-03-16-cv-image_position/"  itemprop="url">
-        【十六】相对位姿测量算法
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      <p>位姿估计-相对位姿测量算法</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2019-03-23T00:00:00+08:00">2019-03-23</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89/">机器视觉</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89/" itemprop="url"><span itemprop="name">机器视觉</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2019/03/23/2019-03-16-cv-image_position/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://aicc-cn.github.io/2019/03/23/2019-03-15-cv-image_camera/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="AICC">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="AICC">
-    <meta itemprop="description" content="Artificial Intelligence Chinese Community">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2019/03/23/2019-03-15-cv-image_camera/"  itemprop="url">
-        【十五】坐标变换与摄像机模型
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      <p>位姿估计-坐标变换与摄像机模型</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2019-03-23T00:00:00+08:00">2019-03-23</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89/">机器视觉</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89/" itemprop="url"><span itemprop="name">机器视觉</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2019/03/23/2019-03-15-cv-image_camera/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://aicc-cn.github.io/2019/03/23/2019-03-20-cv-image_feature/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="AICC">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="AICC">
-    <meta itemprop="description" content="Artificial Intelligence Chinese Community">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2019/03/23/2019-03-20-cv-image_feature/"  itemprop="url">
-        【二十】特征匹配
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      <p>极线几何与立体视觉-特征匹配</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2019-03-23T00:00:00+08:00">2019-03-23</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89/">机器视觉</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89/" itemprop="url"><span itemprop="name">机器视觉</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2019/03/23/2019-03-20-cv-image_feature/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://aicc-cn.github.io/2019/03/23/2019-03-17-cv-image_calibration/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="AICC">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="AICC">
-    <meta itemprop="description" content="Artificial Intelligence Chinese Community">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2019/03/23/2019-03-17-cv-image_calibration/"  itemprop="url">
-        【十七】相机标定
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      <p>位姿估计-相机标定</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2019-03-23T00:00:00+08:00">2019-03-23</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89/">机器视觉</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89/" itemprop="url"><span itemprop="name">机器视觉</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2019/03/23/2019-03-17-cv-image_calibration/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://aicc-cn.github.io/2019/03/23/2019-03-18-cv-image_PolarGeometry/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="AICC">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="AICC">
-    <meta itemprop="description" content="Artificial Intelligence Chinese Community">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2019/03/23/2019-03-18-cv-image_PolarGeometry/"  itemprop="url">
-        【十八】极线几何
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      <p>极线几何与立体视觉-极线几何</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2019-03-23T00:00:00+08:00">2019-03-23</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89/">机器视觉</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89/" itemprop="url"><span itemprop="name">机器视觉</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2019/03/23/2019-03-18-cv-image_PolarGeometry/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://aicc-cn.github.io/2019/03/23/2019-03-22-cv-ORB_feature/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="AICC">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="AICC">
-    <meta itemprop="description" content="Artificial Intelligence Chinese Community">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2019/03/23/2019-03-22-cv-ORB_feature/"  itemprop="url">
-        基于ORB的特征匹配
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      <p>ORB特征匹配</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2019-03-23T00:00:00+08:00">2019-03-23</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89/">机器视觉</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89/" itemprop="url"><span itemprop="name">机器视觉</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2019/03/23/2019-03-22-cv-ORB_feature/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-        
-          <div class='post-wrapper'>
-            <div class="post post-v3 white-box reveal shadow"  itemscope itemtype="http://schema.org/Article" >
-  <link itemprop="mainEntityOfPage" href="https://aicc-cn.github.io/2019/03/23/2019-03-26-cv-IMAGE_JOIN/">
-  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="AICC">
-  </span>
-  <span hidden itemprop="post" itemscope itemtype="http://schema.org/Post">
-    <meta itemprop="name" content="AICC">
-    <meta itemprop="description" content="Artificial Intelligence Chinese Community">
-  </span>
-  
-  
-  
-    <span hidden>
-      <meta itemprop="image" content="/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-    </span>
-  
-  
-    
-    <h2 class="article-title"  itemprop="name headline">
-      <a href="/2019/03/23/2019-03-26-cv-IMAGE_JOIN/"  itemprop="url">
-        图片拼接
-      </a>
-    </h2>
-  
-  <div class='md article-desc' itemprop="articleBody">
-    
-      <p>图片拼接</p>
-    
-  </div>
-  
-    <div class='meta-v3' line_style='solid'>
-      <div>
-        
-        <time itemprop="dateCreated datePublished" datetime="2019-03-23T00:00:00+08:00">2019-03-23</time>
-        
-          <span class="dot"></span>
-          <a class="category-link" href="/categories/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89/">机器视觉</a>
-          
-            <span hidden itemprop="about" itemscope itemtype="http://schema.org/Thing">
-              <a href="/categories/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89/" itemprop="url"><span itemprop="name">机器视觉</span></a>
-            </span>
-          
-        
-      </div>
-      
-        <div>
-          <a class='readmore' href='/2019/03/23/2019-03-26-cv-IMAGE_JOIN/' itemprop="url">
-            阅读全文
-          </a>
-        </div>
-      
-    </div>
-  
-
-</div>
-
-          </div>
-        
-      
-    
-  </section>
-  
-    
-      <br>
-      <div class="prev-next">
-        
-        <p class="current">
-          1 / 3
-        </p>
-        
-          <a class="next" rel="next" href="/page/2/">
-            <section class="post next white-box shadow">
-              &nbsp;下一页&nbsp;<i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
-            </section>
-          </a>
-        
-      </div>
-    
-  
 
 
 </div>
@@ -3225,126 +2838,34 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
 
-<section class="widget blogger shadow desktop mobile pjax">
-  <div class='content'>
-    
-      
-        <a class='avatar flat-box rectangle' href='/about/'>
-          <img no-lazy src='/media/org.volantis/blog/Logo-NavBar@3x.png'/>
-        </a>
-      
-    
-    
-      <div class='text'>
-        
-        
-        
-          <p><span id="jinrishici-sentence">AICC</span></p>
-          <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="/atom.xml"
-              class="social fa-solid fa-rss flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="mailto:me@xxx.com"
-              class="social fa-solid fa-envelope flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="https://github.com/volantis-x/"
-              class="social fab fa-github flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-          
-            <a href="/"
-              class="social fa-solid fa-headphones-alt flat-btn"
-              target="_blank"
-              rel="external nofollow noopener noreferrer">
-              
-            </a>
-          
-        
-      </div>
-    
-  </div>
-</section>
 
-  
 
-  
-    
-    
-  
-
-  <section class="widget category shadow desktop pjax">
+  <section class="widget toc-wrapper shadow desktop mobile pjax" id="toc-div" >
     
   <header>
     
-      <a href='/categories/'><i class="fa-solid fa-folder-open fa-fw" aria-hidden="true"></i><span class='name'>文章分类</span></a>
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
     
   </header>
 
 
     <div class='content'>
-      <ul class="entry navigation">
-        
-          <li><a class="flat-box"
-            title="/categories/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89/" href="/categories/%E6%9C%BA%E5%99%A8%E8%A7%86%E8%A7%89/"
-            active-action="action-categoriesE69CBAE599A8E8A786E8A789"
-            ><div class='name'>机器视觉</div><div class='badge'>(27)</div></a></li>
-        
-      </ul>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%83%8C%E6%99%AF%E5%BB%BA%E6%A8%A1"><span class="toc-text">背景建模</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E7%9B%B8%E5%AF%B9%E8%BF%90%E5%8A%A8%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%96%B9%E5%BC%8F"><span class="toc-text">相对运动的基本方式</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%B8%A7%E5%B7%AE%E6%B3%95%E8%BF%90%E5%8A%A8%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B"><span class="toc-text">帧差法运动目标检测</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E3%80%90%E6%95%B0%E5%AD%A6%E6%A8%A1%E5%9E%8B%E3%80%91"><span class="toc-text">【数学模型】</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%B7%B7%E5%90%88%E9%AB%98%E6%96%AF%E8%83%8C%E6%99%AF%E5%BB%BA%E6%A8%A1"><span class="toc-text">混合高斯背景建模</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E3%80%90%E9%AB%98%E6%96%AF%E8%83%8C%E6%99%AF%E3%80%91"><span class="toc-text">【高斯背景】</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E3%80%90%E6%B7%B7%E5%90%88%E9%AB%98%E6%96%AF%E6%A8%A1%E5%9E%8B%E3%80%91"><span class="toc-text">【混合高斯模型】</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E3%80%90%E6%B7%B7%E5%90%88%E9%AB%98%E6%96%AF%E8%83%8C%E6%99%AF%E5%BB%BA%E6%A8%A1%E6%AD%A5%E9%AA%A4%E3%80%91"><span class="toc-text">【混合高斯背景建模步骤】</span></a></li><li class="toc-item toc-level-5"><a class="toc-link" href="#%E3%80%90%E6%B7%B7%E5%90%88%E9%AB%98%E6%96%AF%E6%A8%A1%E5%9E%8B%E8%BF%AD%E4%BB%A3%E8%AE%A1%E7%AE%97%E5%8E%9F%E7%90%86%E3%80%91"><span class="toc-text">【混合高斯模型迭代计算原理】</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-text">总结</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81%E5%AE%9E%E4%BE%8B"><span class="toc-text">代码实例</span></a></li></ol>
     </div>
   </section>
-
-
-  
-
-  
-    
-    
-  
-
-  <section class="widget tagcloud shadow desktop mobile pjax">
-    
-  <header>
-    
-      <a href='/tags/'><i class="fa-solid fa-tags fa-fw" aria-hidden="true"></i><span class='name'>热门标签</span></a>
-    
-  </header>
-
-
-    <div class='content'>
-      <a href="/tags/OpenCV/" style="font-size: 14px; color: #999">OpenCV</a>
-    </div>
-  </section>
-
-
-  
 
   
 
 
 <!-- 没有 pjax 占位会报错 万恶的 pjax -->
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
+
+  <div class="pjax">
+    <!-- pjax占位 -->
+  </div>
 
   <div class="pjax">
     <!-- pjax占位 -->
@@ -3380,8 +2901,8 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 <pjax>
 <script>
   window.pdata={}
-  pdata.ispage=false;
-  pdata.postTitle="";
+  pdata.ispage=true;
+  pdata.postTitle="【十三】背景建模";
   pdata.commentPath="";
   pdata.commentPlaceholder="";
   pdata.commentConfig={};
@@ -3390,15 +2911,15 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     // header
     var l_header=document.getElementById("l_header");
     
-    l_header.classList.remove("show");
+    l_header.classList.add("show");
     
     
       // cover
       var cover_wrapper=document.querySelector('#l_cover .cover-wrapper');
       var scroll_down=document.getElementById('scroll-down');
-      cover_wrapper.id="full";
-      cover_wrapper.style.display="";
-      scroll_down.style.display="";
+      cover_wrapper.id="none";
+      cover_wrapper.style.display="none";
+      scroll_down.style.display="none";
     
   
 </script>
@@ -3491,7 +3012,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <!-- internal -->
 
-<script src="/js/app.js?time=1648216938086.js"></script>
+<script src="/js/app.js?time=1648216938024.js"></script>
 
 
 
@@ -3622,7 +3143,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
     </ul>
   </div>
-  <script>volantis.js('/js/plugins/rightMenu.js?time=1648216938086')</script>
+  <script>volantis.js('/js/plugins/rightMenu.js?time=1648216938024')</script>
 
 
 
@@ -3751,19 +3272,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1648216938086")
+        volantis.js("/js/plugins/sites.js?time=1648216938024")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1648216938086")
+        volantis.js("/js/plugins/friends.js?time=1648216938024")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1648216938086")
+        volantis.js("/js/plugins/contributors.js?time=1648216938024")
       }
     
   };
@@ -3865,7 +3386,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1648216938086");
+    return volantis.js("/js/search/hexo.js?time=1648216938024");
   }
 
   function loadSearchService() {
@@ -3976,6 +3497,60 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 <!-- pjax 标签必须存在于所有页面 否则 pjax error -->
 <pjax>
+
+    <script>
+  // https://github.com/theme-next/hexo-theme-next/blob/master/layout/_third-party/math/mathjax.swig
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = "/libs/mathjax/es5/tex-mml-chtml.js";
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    // 文章章节标题不能为 “MathJax” ，否则会报错。
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typesetPromise();
+  }
+</script>
+
+
 
 </pjax>
 
@@ -4156,7 +3731,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"AICC","url":"https://aicc-cn.github.io/","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"AICC","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://aicc-cn.github.io/","sameAs":["https://github.com/volantis-x"],"description":"Artificial Intelligence Chinese Community"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://aicc-cn.github.io/","name":"AICC"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"AICC","url":"https://aicc-cn.github.io/","keywords":null,"description":"Artificial Intelligence Chinese Community","author":{"@type":"Person","name":"AICC","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://aicc-cn.github.io/","description":"Artificial Intelligence Chinese Community"},"publisher":{"@type":"Organization","name":"AICC","url":"https://aicc-cn.github.io/","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"https://aicc-cn.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"AICC","url":"https://aicc-cn.github.io/","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"AICC","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://aicc-cn.github.io/","sameAs":["https://github.com/volantis-x"],"description":"Artificial Intelligence Chinese Community"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://aicc-cn.github.io/","name":"AICC"}},{"@type":"ListItem","position":2,"item":{"@id":"https://aicc-cn.github.io/categories/机器视觉/","name":"机器视觉"}},{"@type":"ListItem","position":3,"item":{"@id":"https://aicc-cn.github.io/2019/03/23/2019-03-13-cv-image_background/","name":"【十三】背景建模"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"【十三】背景建模","description":"运动估计-背景建模","datePublished":"2019-03-22T16:00:00.000Z","dateModified":"2022-03-25T13:51:56.365Z","inLanguage":["zh-CN","en","zh-HK","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://aicc-cn.github.io/2019/03/23/2019-03-13-cv-image_background/"},"author":{"@type":"Person","name":"AICC","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://aicc-cn.github.io/"},"publisher":{"@type":"Organization","name":"AICC","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://aicc-cn.github.io/2019/03/23/2019-03-13-cv-image_background/","wordCount":0,"articleSection":"机器视觉","keywords":"OpenCV","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 <!-- more -->
