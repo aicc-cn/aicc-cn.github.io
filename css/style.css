@@ -6763,23 +6763,6 @@ pre {
   font-size: 13px;
   padding: 4px 8px;
 }
-.iziToast-texts {
-  max-width: 300px !important;
-  min-width: 200px !important;
-}
-@media screen and (max-width: 500px) {
-  .iziToast-texts {
-    max-width: unset !important;
-    min-width: unset !important;
-  }
-}
-.iziToast-title {
-  margin-bottom: 6px !important;
-  font-size: 1rem !important;
-}
-.iziToast-message {
-  word-break: break-all !important;
-}
 @media (prefers-color-scheme: dark) {
   :root {
     --color-mode: 'dark';
