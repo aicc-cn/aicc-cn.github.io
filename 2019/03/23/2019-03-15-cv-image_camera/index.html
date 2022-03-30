@@ -20,7 +20,7 @@
   <meta content="AICC" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1648644506676" as="style">
+  <link rel="preload" href="/css/style.css?time=1648645852298" as="style">
   <link rel="preload" href="/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
@@ -36,7 +36,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://aicc-cn.github.io/media/org.volantis/blog/favicon/android-chrome-192x192.png">
 <meta property="article:published_time" content="2019-03-22T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-03-25T13:52:08.285Z">
+<meta property="article:modified_time" content="2022-03-30T13:09:39.256Z">
 <meta property="article:author" content="AICC">
 <meta property="article:tag" content="OpenCV">
 <meta name="twitter:card" content="summary">
@@ -1663,8 +1663,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1648644506676" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1648644506676"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1648645852298" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1648645852298"></noscript>
     <script>
       let userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1741,9 +1741,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   volantis.dom = {}; // 页面Dom see: /source/js/app.js etc.
 
   volantis.GLOBAL_CONFIG ={
-    cdn: {"js":{"app":"/js/app.js?time=1648644506676","sites":"/js/plugins/sites.js?time=1648644506676","friends":"/js/plugins/friends.js?time=1648644506676","parallax":"/js/plugins/parallax.js?time=1648644506676","rightMenu":"/js/plugins/rightMenu.js?time=1648644506676","contributors":"/js/plugins/contributors.js?time=1648644506676","message":"/js/thirdparty/message.js?time=1648644506676","valine":"https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1648644506676","search":"/js/search/hexo.js?time=1648644506676"},"css":{"style":"/css/style.css?time=1648644506676","message":"/css/message.css?time=1648644506676"}},
+    cdn: {"js":{"app":"/js/app.js?time=1648645852298","sites":"/js/plugins/sites.js?time=1648645852298","friends":"/js/plugins/friends.js?time=1648645852298","parallax":"/js/plugins/parallax.js?time=1648645852298","rightMenu":"/js/plugins/rightMenu.js?time=1648645852298","contributors":"/js/plugins/contributors.js?time=1648645852298","message":"/js/thirdparty/message.js?time=1648645852298","valine":"https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1648645852298","search":"/js/search/hexo.js?time=1648645852298"},"css":{"style":"/css/style.css?time=1648645852298","message":"/css/message.css?time=1648645852298"}},
     default: {"avatar":"/media/placeholder/avatar/round/3442075.svg","link":"/media/placeholder/link/8f277b4ee0ecd.svg","cover":"/media/placeholder/cover/76b86c0226ffd.svg","image":"/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date('Wed Mar 30 2022 20:48:26 GMT+0800 (中国标准时间)'),
+    lastupdate: new Date('Wed Mar 30 2022 21:10:52 GMT+0800 (中国标准时间)'),
     sidebar: {
       for_page: ["blogger","category","tagcloud","qrcode"],
       for_post: ["toc"],
@@ -2159,11 +2159,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover" 
-                href="/machine/" title="机器视觉"
+                href="/vision/" title="机器视觉"
                   
                   
                   
-                    active-action="action-machine"
+                    active-action="action-vision"
                   >
                   <i class='fa-solid fa-archive fa-fw'></i>机器视觉
                 </a>
@@ -2239,11 +2239,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover" 
-                href="/machine/" title="机器视觉"
+                href="/vision/" title="机器视觉"
                   
                   
                   
-                    active-action="action-machine"
+                    active-action="action-vision"
                   >
                   <i class='fa-solid fa-archive fa-fw'></i>机器视觉
                 </a>
@@ -2694,10 +2694,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-03-25T21:52:08+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2022-03-30T21:09:39+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2022年3月25日</p>
+    <p>更新于：2022年3月30日</p>
   </a>
 </div>
 
@@ -2725,35 +2725,27 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2019/03/23/2019-03-14-cv-image_LK/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>【十四】光流估计</p>
+        <a class='prev' href='/2019/03/23/2019-03-13-cv-image_background/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>【十三】背景建模</p>
+          <p class='content'>背景建模相对运动的基本方式
+
+相机静止，目标运劢——背景提取(减除)
+相机运劢，目标静止——光流估计(全局运劢)
+相机和目标均运劢——光流估计
+
+
+帧差法运动目标检测
+​    如图可见，由目标...</p>
+        </a>
+      
+      
+        <a class='next' href='/2019/03/23/2019-03-14-cv-image_LK/'>
+          <p class='title'>【十四】光流估计<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
           <p class='content'>光流估计【简介】
 ​    在计算机视觉中，Lucas–Kanade光流算法是一种两帧差分的光流估计算法。它由Bruce D. Lucas 和 Takeo Kanade提出。
 
 【光流的概念】
 ...</p>
-        </a>
-      
-      
-        <a class='next' href='/2019/03/23/2019-03-17-cv-image_calibration/'>
-          <p class='title'>【十七】相机标定<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>相机标定【基本问题】
-相机内外参数标定
-
-
-
-计算$m_{ij}$的解
-分解内、外参数
-考虑非线性项
-
-
-
-
-【Zhang方法】
-Zhang方法：由张正友提出，OpenCV等广泛使用
-
-
-特点：...</p>
         </a>
       
     </div>
@@ -2932,7 +2924,7 @@ Zhang方法：由张正友提出，OpenCV等广泛使用
 
 <!-- internal -->
 
-<script src="/js/app.js?time=1648644506676.js"></script>
+<script src="/js/app.js?time=1648645852298.js"></script>
 
 
 
@@ -3062,19 +3054,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1648644506676")
+        volantis.js("/js/plugins/sites.js?time=1648645852298")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1648644506676")
+        volantis.js("/js/plugins/friends.js?time=1648645852298")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1648644506676")
+        volantis.js("/js/plugins/contributors.js?time=1648645852298")
       }
     
   };
@@ -3201,7 +3193,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1648644506676");
+    return volantis.js("/js/search/hexo.js?time=1648645852298");
   }
 
   function loadSearchService() {
@@ -3270,7 +3262,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
   <script>
-  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp"];
+  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -3313,7 +3305,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('/js/plugins/parallax.js?time=1648644506676').then(()=>{
+    volantis.js('/js/plugins/parallax.js?time=1648645852298').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
@@ -3601,7 +3593,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"AICC","url":"https://aicc-cn.github.io/","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"AICC","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://aicc-cn.github.io/","sameAs":["https://github.com/volantis-x"],"description":"Artificial Intelligence Chinese Community"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://aicc-cn.github.io/","name":"AICC"}},{"@type":"ListItem","position":2,"item":{"@id":"https://aicc-cn.github.io/categories/机器视觉/","name":"机器视觉"}},{"@type":"ListItem","position":3,"item":{"@id":"https://aicc-cn.github.io/2019/03/23/2019-03-15-cv-image_camera/","name":"【十五】坐标变换与摄像机模型"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"【十五】坐标变换与摄像机模型","description":"位姿估计-坐标变换与摄像机模型","datePublished":"2019-03-22T16:00:00.000Z","dateModified":"2022-03-25T13:52:08.285Z","inLanguage":["zh-CN","en","zh-HK","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://aicc-cn.github.io/2019/03/23/2019-03-15-cv-image_camera/"},"author":{"@type":"Person","name":"AICC","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://aicc-cn.github.io/"},"publisher":{"@type":"Organization","name":"AICC","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://aicc-cn.github.io/2019/03/23/2019-03-15-cv-image_camera/","wordCount":0,"articleSection":"机器视觉","keywords":"OpenCV","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"AICC","url":"https://aicc-cn.github.io/","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"AICC","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://aicc-cn.github.io/","sameAs":["https://github.com/volantis-x"],"description":"Artificial Intelligence Chinese Community"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://aicc-cn.github.io/","name":"AICC"}},{"@type":"ListItem","position":2,"item":{"@id":"https://aicc-cn.github.io/categories/机器视觉/","name":"机器视觉"}},{"@type":"ListItem","position":3,"item":{"@id":"https://aicc-cn.github.io/2019/03/23/2019-03-15-cv-image_camera/","name":"【十五】坐标变换与摄像机模型"}}]},{"@context":"http://schema.org","@type":"BlogPosting","headline":"【十五】坐标变换与摄像机模型","description":"位姿估计-坐标变换与摄像机模型","datePublished":"2019-03-22T16:00:00.000Z","dateModified":"2022-03-30T13:09:39.256Z","inLanguage":["zh-CN","en","zh-HK","zh-TW","default"],"mainEntityOfPage":{"@type":"WebPage","@id":"https://aicc-cn.github.io/2019/03/23/2019-03-15-cv-image_camera/"},"author":{"@type":"Person","name":"AICC","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"https://aicc-cn.github.io/"},"publisher":{"@type":"Organization","name":"AICC","logo":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"https://aicc-cn.github.io/2019/03/23/2019-03-15-cv-image_camera/","wordCount":0,"articleSection":"机器视觉","keywords":"OpenCV","image":{"@type":"ImageObject","url":"/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 <!-- more -->
