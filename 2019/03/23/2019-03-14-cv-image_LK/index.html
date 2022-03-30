@@ -20,7 +20,7 @@
   <meta content="AICC" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1648649962759" as="style">
+  <link rel="preload" href="/css/style.css?time=1648650019942" as="style">
   <link rel="preload" href="/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
@@ -1664,8 +1664,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1648649962759" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1648649962759"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1648650019942" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1648650019942"></noscript>
     <script>
       let userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1742,9 +1742,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   volantis.dom = {}; // 页面Dom see: /source/js/app.js etc.
 
   volantis.GLOBAL_CONFIG ={
-    cdn: {"js":{"app":"/js/app.js?time=1648649962759","sites":"/js/plugins/sites.js?time=1648649962759","friends":"/js/plugins/friends.js?time=1648649962759","parallax":"/js/plugins/parallax.js?time=1648649962759","rightMenu":"/js/plugins/rightMenu.js?time=1648649962759","contributors":"/js/plugins/contributors.js?time=1648649962759","message":"/js/thirdparty/message.js?time=1648649962759","valine":"https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1648649962759","search":"/js/search/hexo.js?time=1648649962759"},"css":{"style":"/css/style.css?time=1648649962759","message":"/css/message.css?time=1648649962759"}},
+    cdn: {"js":{"app":"/js/app.js?time=1648650019942","sites":"/js/plugins/sites.js?time=1648650019942","friends":"/js/plugins/friends.js?time=1648650019942","parallax":"/js/plugins/parallax.js?time=1648650019942","rightMenu":"/js/plugins/rightMenu.js?time=1648650019942","contributors":"/js/plugins/contributors.js?time=1648650019942","message":"/js/thirdparty/message.js?time=1648650019942","valine":"https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1648650019942","search":"/js/search/hexo.js?time=1648650019942"},"css":{"style":"/css/style.css?time=1648650019942","message":"/css/message.css?time=1648650019942"}},
     default: {"avatar":"/media/placeholder/avatar/round/3442075.svg","link":"/media/placeholder/link/8f277b4ee0ecd.svg","cover":"/media/placeholder/cover/76b86c0226ffd.svg","image":"/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date('Wed Mar 30 2022 22:19:22 GMT+0800 (中国标准时间)'),
+    lastupdate: new Date('Wed Mar 30 2022 22:20:19 GMT+0800 (中国标准时间)'),
     sidebar: {
       for_page: ["blogger","lastupdate","category","tagcloud","qrcode"],
       for_post: ["toc"],
@@ -2234,7 +2234,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-archives"
                   >
-                  <i class='fa-duotone fa-book fa-fw'></i>文档
+                  <i class='fa-solid fa-book fa-fw'></i>文档
                 </a>
                 
               </li>
@@ -2348,7 +2348,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
                   
                     active-action="action-archives"
                   >
-                  <i class='fa-duotone fa-book fa-fw'></i>文档
+                  <i class='fa-solid fa-book fa-fw'></i>文档
                 </a>
                 
               </li>
@@ -2705,33 +2705,25 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2019/03/23/2019-03-19-cv-image_Stereo/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>【十九】立体视觉</p>
-          <p class='content'>立体视觉【基本概念】
-我们在二维视角中，结构和深度是不确定的
+        <a class='prev' href='/2019/03/23/2019-03-15-cv-image_camera/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>【十五】坐标变换与摄像机模型</p>
+          <p class='content'>坐标变换与摄像机模型图像变换模型【平移变换】
+只改变图形位置，不改变图形的大小和形状.
 
 
-立体视觉：第2个照相机可以解决这种歧义性，通过三角化实现深度测量
-
-
-
-【平行双目视觉】
-假设双目完全平行
-
-
-空间点三维座标位...</p>
+代码及演示
+123456789101112131415import cv2import numpy a...</p>
         </a>
       
       
-        <a class='next' href='/2019/03/23/2019-03-20-cv-image_feature/'>
-          <p class='title'>【二十】特征匹配<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>特征匹配【基本问题】
-特征点匹配
+        <a class='next' href='/2019/03/23/2019-03-16-cv-image_position/'>
+          <p class='title'>【十六】相对位姿测量算法<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>相对位姿测量算法【基于空间多点】
+相对位姿估计的基本问题
 
 
-暴力搜索与2NN判据
-
-设两帧图像中的对应特征点集${𝑥𝑖,𝑦_𝑖}$和${𝑥_𝑖^′,𝑦_𝑖^′}$，共N个特征点 对应点 $𝐱_𝒋&...</p>
+已知：相机内参数；多个空间上的特征点(非共面)在目标坐标系(3D)和相平面坐标系(2D)坐标。
+输出：目标坐标系相对相机坐标系的位置...</p>
         </a>
       
     </div>
@@ -2910,7 +2902,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
 <!-- internal -->
 
-<script src="/js/app.js?time=1648649962759.js"></script>
+<script src="/js/app.js?time=1648650019942.js"></script>
 
 
 
@@ -3040,19 +3032,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1648649962759")
+        volantis.js("/js/plugins/sites.js?time=1648650019942")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1648649962759")
+        volantis.js("/js/plugins/friends.js?time=1648650019942")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1648649962759")
+        volantis.js("/js/plugins/contributors.js?time=1648650019942")
       }
     
   };
@@ -3179,7 +3171,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1648649962759");
+    return volantis.js("/js/search/hexo.js?time=1648650019942");
   }
 
   function loadSearchService() {
@@ -3248,7 +3240,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
   <script>
-  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp"];
+  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -3291,7 +3283,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('/js/plugins/parallax.js?time=1648649962759').then(()=>{
+    volantis.js('/js/plugins/parallax.js?time=1648650019942').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
