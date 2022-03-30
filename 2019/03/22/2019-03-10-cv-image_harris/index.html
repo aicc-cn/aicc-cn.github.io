@@ -20,7 +20,7 @@
   <meta content="AICC" name="apple-mobile-web-app-title">
   <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style">
   <meta content="telephone=no" name="format-detection">
-  <link rel="preload" href="/css/style.css?time=1648563874392" as="style">
+  <link rel="preload" href="/css/style.css?time=1648643678286" as="style">
   <link rel="preload" href="/media/fonts/VarelaRound/VarelaRound-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 <link rel="preload" href="/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
@@ -1663,8 +1663,8 @@ ul.list-v >li>a:hover {
 }
 
   </style>
-  <link rel="stylesheet" href="/css/style.css?time=1648563874392" media="print" onload="this.media='all';this.onload=null">
-  <noscript><link rel="stylesheet" href="/css/style.css?time=1648563874392"></noscript>
+  <link rel="stylesheet" href="/css/style.css?time=1648643678286" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css?time=1648643678286"></noscript>
     <script>
       let userColorScheme=localStorage.getItem("color-scheme")
       if(userColorScheme){
@@ -1741,9 +1741,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   volantis.dom = {}; // 页面Dom see: /source/js/app.js etc.
 
   volantis.GLOBAL_CONFIG ={
-    cdn: {"js":{"app":"/js/app.js?time=1648563874392","sites":"/js/plugins/sites.js?time=1648563874392","friends":"/js/plugins/friends.js?time=1648563874392","parallax":"/js/plugins/parallax.js?time=1648563874392","rightMenu":"/js/plugins/rightMenu.js?time=1648563874392","contributors":"/js/plugins/contributors.js?time=1648563874392","message":"/js/thirdparty/message.js?time=1648563874392","valine":"https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1648563874392","search":"/js/search/hexo.js?time=1648563874392"},"css":{"style":"/css/style.css?time=1648563874392","message":"/css/message.css?time=1648563874392"}},
+    cdn: {"js":{"app":"/js/app.js?time=1648643678286","sites":"/js/plugins/sites.js?time=1648643678286","friends":"/js/plugins/friends.js?time=1648643678286","parallax":"/js/plugins/parallax.js?time=1648643678286","rightMenu":"/js/plugins/rightMenu.js?time=1648643678286","contributors":"/js/plugins/contributors.js?time=1648643678286","message":"/js/thirdparty/message.js?time=1648643678286","valine":"https://npm.elemecdn.com/valine@1.4/dist/Valine.min.js?time=1648643678286","search":"/js/search/hexo.js?time=1648643678286"},"css":{"style":"/css/style.css?time=1648643678286","message":"/css/message.css?time=1648643678286"}},
     default: {"avatar":"/media/placeholder/avatar/round/3442075.svg","link":"/media/placeholder/link/8f277b4ee0ecd.svg","cover":"/media/placeholder/cover/76b86c0226ffd.svg","image":"/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date('Tue Mar 29 2022 22:24:34 GMT+0800 (中国标准时间)'),
+    lastupdate: new Date('Wed Mar 30 2022 20:34:38 GMT+0800 (中国标准时间)'),
     sidebar: {
       for_page: ["blogger","category","tagcloud","qrcode"],
       for_post: ["toc"],
@@ -2143,7 +2143,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
         
         <a class="title flat-box" target="_self" href='/'>
           
-            <img no-lazy class='logo' src='/media/org.volantis/blog/Logo-NavBar@3x.png'/>
+            <img no-lazy class='logo' src='/images/site.png'/>
           
           
           
@@ -2602,30 +2602,22 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2019/03/22/2019-03-02-cv-visualsystem/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>【二】视觉系统</p>
-          <p class='content'>视觉系统构成要素
+        <a class='prev' href='/2019/03/22/2019-03-12-cv-image_orb/'>
+          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>【十二】ORB角点检测</p>
+          <p class='content'>ORB角点检测【简介】
 
-照明设备：光源
-成像设备：相机
-处理设备：主机
-算法软件：视觉处理系统
-
-
-【要素的关系】
-
-
-【要素的理解】
-
-光源：对场景进行照明，使能捕捉的范围更大，事物更清晰，一般就...</p>
+ORB（Oriented FAST and Rotated BRIEF）是一种快速特征点提取和描述的算法。
+这个算法是由Ethan Rublee, Vincent Ra...</p>
         </a>
       
       
-        <a class='next' href='/2019/03/22/2019-03-11-cv-image_sift/'>
-          <p class='title'>【十一】SIFT角点检测<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
-          <p class='content'>概述
+        <a class='next' href='/2019/03/22/2019-03-06-cv-image_hist/'>
+          <p class='title'>【六】直方图<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>图像直方图
+通过灰度直方图看到图像的照明效果
 
-SIFT的全称是Scale Invariant Feature Transform（尺度不变特征变换），是由加拿大教授David G.Lowe在1999年在会议文章中提出，2004年发表...</p>
+
+代码实例12345678910111213141516171819202122232425262728293031323334353637383...</p>
         </a>
       
     </div>
@@ -2804,7 +2796,7 @@ SIFT的全称是Scale Invariant Feature Transform（尺度不变特征变换）�
 
 <!-- internal -->
 
-<script src="/js/app.js?time=1648563874392.js"></script>
+<script src="/js/app.js?time=1648643678286.js"></script>
 
 
 
@@ -2934,19 +2926,19 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     
       const sites_api = document.getElementById('sites-api');
       if (sites_api != undefined && typeof SitesJS === 'undefined') {
-        volantis.js("/js/plugins/sites.js?time=1648563874392")
+        volantis.js("/js/plugins/sites.js?time=1648643678286")
       }
     
     
       const friends_api = document.getElementById('friends-api');
       if (friends_api != undefined && typeof FriendsJS === 'undefined') {
-        volantis.js("/js/plugins/friends.js?time=1648563874392")
+        volantis.js("/js/plugins/friends.js?time=1648643678286")
       }
     
     
       const contributors_api = document.getElementById('contributors-api');
       if (contributors_api != undefined && typeof ContributorsJS === 'undefined') {
-        volantis.js("/js/plugins/contributors.js?time=1648563874392")
+        volantis.js("/js/plugins/contributors.js?time=1648643678286")
       }
     
   };
@@ -3073,7 +3065,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
   function loadSearchScript() {
     // see: layout/_partial/scripts/_ctrl/cdnCtrl.ejs
-    return volantis.js("/js/search/hexo.js?time=1648563874392");
+    return volantis.js("/js/search/hexo.js?time=1648643678286");
   }
 
   function loadSearchService() {
@@ -3142,7 +3134,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
   <script>
-  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp"];
+  let imgs = ["https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/005.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/054.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/052.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/056.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/042.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/039.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/035.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/004.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/001.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/006.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/034.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/025.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/051.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/002.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/016.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/003.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/019.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/038.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/012.webp","https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.webp"];
   let index = 0;
   let IntervalParallax = null;
 
@@ -3185,7 +3177,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
   var runningOnBrowser = typeof window !== "undefined";
   var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
   if (!isBot) {
-    volantis.js('/js/plugins/parallax.js?time=1648563874392').then(()=>{
+    volantis.js('/js/plugins/parallax.js?time=1648643678286').then(()=>{
       parallax()
     })
     volantis.pjax.send(()=>{
